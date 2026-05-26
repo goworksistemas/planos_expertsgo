@@ -154,7 +154,7 @@ export function WalletPage() {
                   onClick={() => setShowBuyModal(false)}
                 >
                   <span className="font-medium">{formatGoCash(amount)}</span>
-                  <span className="text-sm text-muted-foreground">+ bônus 10% (demo)</span>
+                  <span className="text-sm text-muted-foreground">crédito na hora · 1:1</span>
                 </button>
               ))}
               <Button variant="secondary" className="w-full" onClick={() => setShowBuyModal(false)}>

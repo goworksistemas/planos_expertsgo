@@ -1,7 +1,8 @@
 import { ArrowRight, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { PLANS } from '@/data/plans'
-import { ConversionBonus } from '@/components/plans/ConversionBonus'
+import { ExchangeBanner } from '@/components/plans/ExchangeBanner'
+import { PlatformBenefits } from '@/components/plans/PlatformBenefits'
 import { PlanCalculator } from '@/components/plans/PlanCalculator'
 import { PlanCard } from '@/components/plans/PlanCard'
 import { PlansFaq } from '@/components/plans/PlansFaq'
@@ -23,8 +24,8 @@ export function PlansLandingPage() {
           Assine o NetworkGo e ganhe créditos pra usar nas nossas unidades
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-          Planos mensais com conversão automática em GoCash. Reserve salas, coworkings e espaços
-          com saldo pré-pago — mais barato que pagar avulso.
+          Planos mensais que viram saldo GoCash na proporção 1:1. Reserve salas com a tarifa de
+          assinante — mais barato que o avulso — e use toda a plataforma NetworkGo.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button size="lg" onClick={() => navigate('/checkout?plano=plus')}>
@@ -37,9 +38,9 @@ export function PlansLandingPage() {
         </div>
       </section>
 
-      {/* Bônus */}
+      {/* Câmbio 1:1 */}
       <section className="mt-16">
-        <ConversionBonus />
+        <ExchangeBanner />
       </section>
 
       {/* Planos */}
@@ -55,6 +56,11 @@ export function PlansLandingPage() {
             <PlanCard key={plan.id} plan={plan} highlighted={plan.popular} />
           ))}
         </div>
+      </section>
+
+      {/* Benefícios da plataforma */}
+      <section className="mt-20">
+        <PlatformBenefits />
       </section>
 
       {/* Calculadora + comparação */}

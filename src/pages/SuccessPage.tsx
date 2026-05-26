@@ -36,7 +36,7 @@ export function SuccessPage() {
                 Crédito GoCash liberado
               </p>
               <p className="text-2xl font-bold text-primary">
-                {formatCurrency(plan.gocashCredit)}
+                {formatCurrency(plan.price)}
               </p>
             </div>
           </div>

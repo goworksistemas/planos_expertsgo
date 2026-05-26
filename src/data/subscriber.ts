@@ -48,7 +48,7 @@ export const MOCK_SUBSCRIBER: Subscriber = {
 
 export const MOCK_WALLET = {
   balance: 142.5,
-  nextRecharge: { date: '2026-06-01', amount: 72 },
+  nextRecharge: { date: '2026-06-01', amount: 60 },
   nextBilling: { date: '2026-06-01', amount: 60 },
   reservationsThisMonth: 4,
 }
@@ -92,9 +92,9 @@ export const MOCK_MOVEMENTS: GoCashMovement[] = [
   {
     id: 'mov-1',
     date: '2026-05-01T08:00:00',
-    description: 'Recarga assinatura Starter (+20% bônus)',
+    description: 'Recarga assinatura Starter (câmbio 1:1)',
     type: 'credit',
-    amount: 72,
+    amount: 60,
   },
   {
     id: 'mov-2',
@@ -153,9 +153,9 @@ export const MOCK_MOVEMENTS: GoCashMovement[] = [
   {
     id: 'mov-9',
     date: '2026-04-01T08:00:00',
-    description: 'Recarga assinatura Starter (+20% bônus)',
+    description: 'Recarga assinatura Starter (câmbio 1:1)',
     type: 'credit',
-    amount: 72,
+    amount: 60,
   },
   {
     id: 'mov-10',
@@ -187,7 +187,7 @@ export const MOCK_SUGGESTIONS: Suggestion[] = [
     type: 'upgrade',
     title: 'Que tal upgrade pro Plus?',
     description:
-      'Você já fez 4 reservas este mês. No Plus você ganha R$ 180 em GoCash e prioridade na reserva.',
+      'Você já fez 4 reservas este mês. No Plus você recebe R$ 150 em GoCash (1:1) e prioridade na reserva.',
     actionLabel: 'Conhecer Plus',
     actionHref: '/checkout?plano=plus',
   },

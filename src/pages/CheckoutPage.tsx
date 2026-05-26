@@ -241,12 +241,12 @@ export function CheckoutPage() {
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Crédito GoCash</span>
                     <span className="font-medium text-primary">
-                      {formatCurrency(plan.gocashCredit)}
+                      {formatCurrency(plan.price)}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Bônus</span>
-                    <span className="font-medium text-emerald-600">+{plan.bonusPercent}%</span>
+                    <span className="text-muted-foreground">Câmbio</span>
+                    <span className="font-medium text-emerald-600">1:1</span>
                   </div>
                 </div>
                 <Separator />

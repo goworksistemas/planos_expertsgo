@@ -44,7 +44,7 @@ export function PlanCard({ plan, highlighted }: PlanCardProps) {
           <span className="ml-1 text-sm text-muted-foreground">/mês</span>
         </div>
         <p className="mt-2 text-sm text-primary">
-          Vira {formatCurrency(plan.gocashCredit)} em GoCash
+          Vira {formatCurrency(plan.price)} em GoCash · câmbio 1:1
         </p>
       </CardHeader>
       <CardContent className="pl-7">
