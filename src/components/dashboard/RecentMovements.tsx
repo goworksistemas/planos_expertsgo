@@ -27,7 +27,7 @@ export function RecentMovements({ movements, limit = 5 }: RecentMovementsProps) 
             <div
               className={cn(
                 'flex h-8 w-8 shrink-0 items-center justify-center rounded-full',
-                m.type === 'credit' ? 'bg-primary/10 text-primary' : 'bg-red-500/10 text-red-400',
+                m.type === 'credit' ? 'bg-primary/10 text-primary' : 'bg-red-50 text-red-600',
               )}
             >
               {m.type === 'credit' ? (
@@ -43,7 +43,7 @@ export function RecentMovements({ movements, limit = 5 }: RecentMovementsProps) 
             <p
               className={cn(
                 'shrink-0 text-sm font-semibold',
-                m.type === 'credit' ? 'text-primary' : 'text-red-400',
+                m.type === 'credit' ? 'text-primary' : 'text-red-600',
               )}
             >
               {m.type === 'credit' ? '+' : '−'}

@@ -115,7 +115,7 @@ export function WalletPage() {
                 <span className="text-primary">
                   +{formatGoCash(credits)} <span className="text-muted-foreground">entradas</span>
                 </span>
-                <span className="text-red-400">
+                <span className="text-red-600">
                   −{formatGoCash(debits)} <span className="text-muted-foreground">saídas</span>
                 </span>
               </div>
@@ -130,7 +130,7 @@ export function WalletPage() {
 
       {showBuyModal && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4"
           role="dialog"
           aria-modal="true"
           aria-labelledby="buy-gocash-title"

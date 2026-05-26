@@ -246,7 +246,7 @@ export function CheckoutPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Bônus</span>
-                    <span className="font-medium text-emerald-400">+{plan.bonusPercent}%</span>
+                    <span className="font-medium text-emerald-600">+{plan.bonusPercent}%</span>
                   </div>
                 </div>
                 <Separator />

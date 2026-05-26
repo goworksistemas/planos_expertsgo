@@ -1,6 +1,6 @@
 # NetworkGo — Planos de assinatura
 
-Landing pública de planos e fluxo de checkout para assinatura NetworkGo, com tema escuro inspirado no GoCash Admin.
+Landing pública de planos e fluxo de checkout para assinatura NetworkGo, com tema claro comercial e destaque teal (GoCash).
 
 ## Stack
 

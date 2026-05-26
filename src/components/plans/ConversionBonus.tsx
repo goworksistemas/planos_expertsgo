@@ -4,7 +4,7 @@ import { formatCurrency } from '@/lib/utils'
 
 export function ConversionBonus() {
   return (
-    <section className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-card to-purple-500/10 p-8 sm:p-10">
+    <section className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/5 via-card to-sky-50 p-8 shadow-sm sm:p-10">
       <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/10 blur-2xl" />
       <div className="relative flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-4">
@@ -25,7 +25,7 @@ export function ConversionBonus() {
             </p>
           </div>
         </div>
-        <div className="rounded-xl border border-primary/40 bg-background/60 px-6 py-4 text-center backdrop-blur-sm">
+        <div className="rounded-xl border border-primary/25 bg-white px-6 py-4 text-center shadow-sm">
           <p className="text-4xl font-bold text-primary">+{BONUS_PERCENT}%</p>
           <p className="text-xs uppercase tracking-widest text-muted-foreground">bônus GoCash</p>
         </div>

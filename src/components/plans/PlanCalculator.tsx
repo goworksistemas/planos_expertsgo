@@ -66,7 +66,7 @@ export function PlanCalculator() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border bg-muted/20 p-4">
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Avulso</p>
-            <p className="mt-1 text-xl font-bold text-red-400 line-through decoration-red-400/50">
+            <p className="mt-1 text-xl font-bold text-red-500 line-through decoration-red-300">
               {formatCurrency(avulso)}
             </p>
             <p className="text-xs text-muted-foreground">
@@ -77,7 +77,7 @@ export function PlanCalculator() {
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Com plano</p>
             <p className="mt-1 text-xl font-bold text-primary">{formatCurrency(planCost)}</p>
             {savings > 0 && (
-              <p className="flex items-center gap-1 text-xs text-emerald-400">
+              <p className="flex items-center gap-1 text-xs text-emerald-600">
                 <TrendingDown className="h-3 w-3" />
                 Economia de {formatCurrency(savings)}/mês
               </p>

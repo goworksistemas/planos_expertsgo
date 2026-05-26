@@ -18,7 +18,7 @@ const Slider = React.forwardRef<HTMLInputElement, SliderProps>(
       onChange={(e) => onValueChange(Number(e.target.value))}
       className={cn(
         'h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary',
-        '[&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:shadow-[0_0_12px_rgba(0,223,182,0.4)]',
+        '[&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:shadow-primary/30',
         className,
       )}
       {...props}

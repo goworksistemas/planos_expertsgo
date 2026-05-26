@@ -30,7 +30,7 @@ export function AppLayout() {
 
   return (
     <div className="flex min-h-screen bg-background">
-      <aside className="hidden w-[72px] flex-col items-center border-r border-border bg-card py-4 md:flex">
+      <aside className="hidden w-[72px] flex-col items-center border-r border-border bg-card py-4 shadow-sm md:flex">
         <Link
           to="/painel"
           className="mb-8 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"
@@ -47,7 +47,7 @@ export function AppLayout() {
                 cn(
                   'flex h-10 w-10 items-center justify-center rounded-lg transition-colors',
                   isActive
-                    ? 'bg-purple-600/80 text-white'
+                    ? 'bg-primary text-primary-foreground shadow-sm'
                     : 'text-muted-foreground hover:bg-accent hover:text-foreground',
                 )
               }
@@ -71,7 +71,7 @@ export function AppLayout() {
       </aside>
 
       <div className="flex flex-1 flex-col">
-        <header className="border-b border-border bg-background/80 px-4 py-4 backdrop-blur-md sm:px-6">
+        <header className="border-b border-border bg-card/90 px-4 py-4 shadow-sm backdrop-blur-md sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">

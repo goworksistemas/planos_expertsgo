@@ -10,7 +10,7 @@ interface ReserveHighlightCardProps {
 
 export function ReserveHighlightCard({ balance }: ReserveHighlightCardProps) {
   return (
-    <Card className="overflow-hidden border-primary/30 bg-gradient-to-br from-primary/10 via-card to-card">
+    <Card className="overflow-hidden border-primary/20 bg-gradient-to-br from-primary/5 via-card to-sky-50/50 shadow-sm">
       <CardContent className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-4">
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary">
