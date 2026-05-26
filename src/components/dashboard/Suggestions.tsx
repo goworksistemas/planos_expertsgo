@@ -41,7 +41,7 @@ export function Suggestions({ suggestions }: SuggestionsProps) {
                   <p className="font-medium text-foreground">{s.title}</p>
                   <p className="mt-1 text-sm text-muted-foreground">{s.description}</p>
                   {s.actionLabel && (
-                    <Button variant="link" className="mt-2 h-auto p-0 text-primary" asChild>
+                    <Button variant="ghost" className="mt-2 h-auto p-0 text-primary hover:bg-transparent" asChild>
                       {s.actionHref ? (
                         <Link to={s.actionHref}>{s.actionLabel}</Link>
                       ) : (

@@ -51,7 +51,7 @@ export function UsageChart() {
                   borderRadius: '8px',
                   color: '#f0f4f8',
                 }}
-                formatter={(value: number) => [formatGoCash(value), 'Gasto']}
+                formatter={(value) => [formatGoCash(Number(value ?? 0)), 'Gasto']}
               />
               <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={22}>
                 {data.map((entry) => (
